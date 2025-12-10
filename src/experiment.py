@@ -136,7 +136,7 @@ class Experiment:
         return self
     
     def summary(self):
-        print("EXPERIMENT SUMMARY")
+        print("\nEXPERIMENT SUMMARY\n")
         for name, result in self.results.items():
             final_loss = result['losses'][-1]
             final_acc = result['accuracies'][-1]
