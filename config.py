@@ -7,37 +7,37 @@ DEVICE = 'cuda'
 RNN_VANILLA = {
     'name': 'vanilla',
     'rnn_class': RNNVanilla,
-    'hidden_size': 128,
+    'hidden_size': 32,
 }
 RNN_BIO = {
     'name': 'bio',
     'rnn_class': RNNBio,
-    'hidden_size': 128,
+    'hidden_size': 32,
     'r_excitatory': 0.8,
 }
 DMS_TRAINING_CONFIGS = {
     'vanilla': {
-        'seq_len': 480,
-        'epochs': 200,
-        'lr': 0.001,
+        'seq_len': 160,
+        'epochs': 150,
+        'lr': 0.01,
     },
     'bio': {
-        'seq_len': 480,
-        'l1_lambda': 0.001,
-        'epochs': 200,
-        'lr': 0.001,
+        'seq_len': 160,
+        'l1_lambda': 0.00001,
+        'epochs': 150,
+        'lr': 0.01,
     }
 }
-GNG_TRAINING_CONFIGS = {
+DC_TRAINING_CONFIGS = {
     'vanilla': {
-        'seq_len': 225,
-        'epochs': 200,
-        'lr': 0.001,
+        'seq_len': 260,
+        'epochs': 220,
+        'lr': 0.01,
     },
     'bio': {
-        'seq_len': 225,
-        'l1_lambda': 0.001,
-        'epochs': 200,
-        'lr': 0.001,
+        'seq_len': 260,
+        'l1_lambda': 0.00001,
+        'epochs': 220,
+        'lr': 0.01,
     }
 }
